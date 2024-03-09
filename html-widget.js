@@ -18,5 +18,3 @@ document.getElementById("widget-button").addEventListener("click", function () {
   alert("Button clicked!");
 });
 
-
-<script src="https://widget-test-2.vercel.app/html-widget.js"></script>
