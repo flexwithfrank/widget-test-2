@@ -1,5 +1,5 @@
 // Load the HTML content of the widget
-fetch('widget.html')
+fetch('index.html')
     .then(response => response.text())
     .then(html => {
         // Create a new div element
