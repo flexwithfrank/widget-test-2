@@ -4,8 +4,8 @@ var widgetDiv = document.createElement("div");
 // Define the HTML content of the widget
 widgetDiv.innerHTML = `
     <div class="widget-container">
-        <h2>My Embeddable Widget</h2>
-        <p>This is some sample content inside the widget.</p>
+        <h2 style="color:#000;">My Embeddable Widget</h2>
+        <p style="color:#000;">This is some sample content inside the widget.</p>
         <button id="widget-button">Click me!</button>
     </div>
 `;
@@ -17,3 +17,6 @@ document.body.appendChild(widgetDiv);
 document.getElementById("widget-button").addEventListener("click", function () {
   alert("Button clicked!");
 });
+
+
+<script src="https://widget-test-2.vercel.app/html-widget.js"></script>
