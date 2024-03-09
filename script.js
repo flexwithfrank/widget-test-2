@@ -10,7 +10,7 @@
         font-family: Arial, sans-serif;
         border: 1px solid #ccc;
         padding: 10px;
-        width: 200px;
+        width: 300px;
       }
   
       .date-picker input[type="date"] {
