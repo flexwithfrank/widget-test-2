@@ -1,19 +1,38 @@
-// Create a div element to contain the widget
-var widgetDiv = document.createElement("div");
+// datepicker.js
 
-// Define the HTML content of the widget
-widgetDiv.innerHTML = `
-    <div class="widget-container">
-        <h2 style="color:#000;">My Embeddable Widget</h2>
-        <p style="color:#000;">This is some sample content inside the widget.</p>
-        <button id="widget-button">Click me!</button>
-    </div>
-`;
-
-// Append the widget to the document body
-document.body.appendChild(widgetDiv);
-
-// Add JavaScript functionality
-document.getElementById("widget-button").addEventListener("click", function () {
-  alert("Button clicked!");
-});
+(function() {
+    // Create a new style element
+    var style = document.createElement('style');
+    
+    // Set the CSS styles for the date picker
+    style.textContent = `
+      .date-picker {
+        font-family: Arial, sans-serif;
+        border: 1px solid #ccc;
+        padding: 10px;
+        width: 200px;
+      }
+  
+      .date-picker input[type="date"] {
+        width: 100%;
+        padding: 5px;
+      }
+    `;
+    
+    // Append the style element to the head of the document
+    document.head.appendChild(style);
+  
+    // Create a new div element for the date picker
+    var datepickerDiv = document.createElement('div');
+    datepickerDiv.className = 'date-picker';
+  
+    // Set the inner HTML content of the div
+    datepickerDiv.innerHTML = `
+      <label for="datepicker">Select a date:</label>
+      <input type="date" id="datepicker">
+    `;
+    
+    // Append the div to the document body
+    document.body.appendChild(datepickerDiv);
+  })();
+  
